@@ -14,8 +14,6 @@ branch javascript
 branch react
 ```
 
----
-
 ## Installation
 
 Use node package manager [npm](https://https://www.npmjs.com/) to install the project.
