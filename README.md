@@ -1,7 +1,5 @@
 # Commands
 
----
-
 ## Choose the boilerplate
 
 ### For `Vanilla JavaScript`
