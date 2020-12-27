@@ -7,8 +7,19 @@ module.exports = merge(commonConfig, {
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
+    stats: {
+      env: false,
+      colors: true,
+      assets: false,
+      logging: 'none',
+      children: false,
+      modules: false,
+      entrypoints: false,
+    },
     contentBase: path.join(__dirname, 'dist'),
+    publicPath: '/',
     compress: true,
+    host: 'localhost',
     port: 9000,
     hot: true,
   },
@@ -25,9 +36,6 @@ module.exports = merge(commonConfig, {
           },
           {
             loader: 'css-loader',
-          },
-          {
-            loader: 'postcss-loader',
           },
           {
             loader: 'sass-loader',
