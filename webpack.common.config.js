@@ -3,10 +3,13 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/js/index.js',
+  entry: {
+    script: './src/js/app.js',
+    style: './src/scss/main.scss',
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: './assets/js/script.js'
+    filename: './assets/js/[name].bundle.js'
   },
   module: {
     rules: [
